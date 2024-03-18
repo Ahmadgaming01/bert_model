@@ -14,8 +14,8 @@ model = TFBertForSequenceClassification.from_pretrained(model_name)
 
 # test the model 
 
-text = input('Wirte Your text hier :')
-text_input = tokenizer(text)
+text = input('Wirte Your text hier :' )
+text_input = tokenizer(text , return_tensors = 'tf')
 
 
 input_ids = text_input['input_ids']
